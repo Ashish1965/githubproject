@@ -63,7 +63,7 @@ app.post("/response", async (req, res)=>{
       res.redirect("/response");
 });
 
-app.get("/response", async (req, res) => {
+app.get("/response", function(req, res){
 
   res.render("response", {
     imageUrl: res1.avatar_url,
